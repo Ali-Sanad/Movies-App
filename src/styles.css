@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1rem;
+  background-color: whitesmoke;
+}
+
+.accordion {
+  width: 98%;
+  margin: 2rem auto;
+}
+
+.accordion-title {
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: rgb(185, 240, 217);
+  border-radius: 5px;
+  border: rgb(120, 209, 120) 1px solid;
+  margin-top: 10px;
+}
+
+.movie-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(176, 226, 241);
+  border-radius: 5px;
+  border: rgb(85, 180, 187) 1px solid;
+  margin-top: 10px;
+  padding: 0.5rem 0;
+}
+
+.accordion-title,
+.accordion-content {
+  padding: 0.5rem 0;
+}
+
+.accordion-content {
+  width: 97%;
+  margin: 0 auto;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.category {
+  background-color: white;
+  width: 95%;
+  height: 20%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.movies-data {
+  background-color: white;
+  width: 95%;
+  height: 80%;
+  border-radius: 5px;
+  border-top: 5px solid rgb(30, 122, 145);
+}
+
+.form-container {
+  margin: 10px 0 15px 15px;
+}
+.form {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+textarea {
+  font-family: sans-serif;
+  padding: 2px 0px;
+  margin-left: 10px;
+  display: inline-block;
+}
+input {
+  padding: 8px 0;
+  display: inline-block;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+button {
+  border-style: none;
+  padding: 10px 0px;
+  width: 100px;
+  background-color: rgb(65, 160, 65);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: auto 10px;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.delete {
+  background-color: rgb(182, 42, 61);
+}
+.edit {
+  background-color: rgb(241, 109, 48);
+}
+.icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.edit-input {
+  margin: 0 5px;
+  outline: none;
+  width: 100px;
+  border: none;
+  border-bottom: 2px dotted cyan;
+  background-color: transparent;
+  box-shadow: none;
+}
+.save-edit {
+  margin-top: 15px;
+}
+@media screen and (max-width: 550px) {
+  body {
+    font-size: 14px;
+  }
+
+  .accordion {
+    width: 100%;
+  }
+  button {
+    width: 50px;
+    margin: auto 3px;
+    font-size: 10px;
+  }
+}
