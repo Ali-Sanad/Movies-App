@@ -8,7 +8,8 @@ import AddCategory from '../components/AddCategory';
 function MovieApp({getApiData, data}) {
   useEffect(() => {
     getApiData();
-  }, [getApiData]);
+    // eslint-disable-next-line
+  }, []);
 
   return (
     <div className='container'>
